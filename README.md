@@ -1,6 +1,6 @@
 Проект на  Yii 2 для Sibitron
 ============================
-Демка интернет магазина с авторизацией и корзиной.
+Демка интернет магазина с авторизацией и корзиной.(дизайном не занимался)
 
 DIRECTORY STRUCTURE
 -------------------
@@ -30,7 +30,9 @@ INSTALLATION
 
 1) Поднять базу через миграции.
 ```php
+php yii migrate/up
 php yii migrate/up --migrationPath=@vendor/dektrium/yii2-user/migrations
+php yii migrate --migrationPath=vendor/pistol88/yii2-cart/migrations
 ```
 CONFIGURATION
 -------------

@@ -10,8 +10,17 @@ $config = [
         'user' => [
             'class' => 'dektrium\user\Module',
         ],
+        'cart' => [
+            'class' => 'pistol88\cart\Module',
+        ],
     ],
     'components' => [
+        'cart' => [
+            'class' => 'pistol88\cart\Cart',
+            'currency' => 'тг.', //Валюта
+            'currencyPosition' => 'after', //after или before (позиция значка валюты относительно цены)
+            'priceFormat' => [2,'.', ''], //Форма цены
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'igevcKlab71RGTcUe3YCojYimQETTH6l',

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cb05132179f0c04fc3bb8161a005d399",
-    "content-hash": "5a96082724ea253b44f5ba9c63bc1202",
+    "hash": "9ec917bbd4879254feb84efdc0620d21",
+    "content-hash": "7e9d6a657c2415bebb60d9f1d9b4490b",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -356,6 +356,57 @@
                 "html"
             ],
             "time": "2016-07-16 12:58:58"
+        },
+        {
+            "name": "pistol88/yii2-cart",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pistol88/yii2-cart.git",
+                "reference": "8b373b4476fc46fe462d0367f7466c9a2d4030b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pistol88/yii2-cart/zipball/8b373b4476fc46fe462d0367f7466c9a2d4030b2",
+                "reference": "8b373b4476fc46fe462d0367f7466c9a2d4030b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-bootstrap": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "pistol88\\cart\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "pistol88\\cart\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ilya Pistol",
+                    "email": "pistol88@gmail.com"
+                }
+            ],
+            "description": "yii2-cart it's a simple cart module to collect application models, that implement cart interface + widgets",
+            "homepage": "https://github.com/pistol88/",
+            "keywords": [
+                "application",
+                "cart",
+                "module",
+                "pistol88",
+                "shop",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2017-01-10 10:26:55"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3154,7 +3205,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "pistol88/yii2-cart": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

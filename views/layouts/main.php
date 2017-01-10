@@ -3,6 +3,7 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use pistol88\cart\widgets\ElementsList;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
@@ -42,6 +43,7 @@ AppAsset::register($this);
                 ['label' => 'Sign out (' . Yii::$app->user->identity->username . ')',
                     'url' => ['/user/security/logout'],
                     'linkOptions' => ['data-method' => 'post']],
+            !Yii::$app->user->isGuest ? '<li>' . ElementsList::widget(['type' => ElementsList::TYPE_DROPDOWN]). '</li>' : '',
             ['label' => 'Register', 'url' => ['/user/registration/register'], 'visible' => Yii::$app->user->isGuest],
             //end user
             /*
